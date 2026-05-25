@@ -17,9 +17,14 @@
   <meta name="twitter:title" content="UFC Streams - Watch UFC Streams Free | OvoStreams">
   <meta name="twitter:description" content="Live UFC and MMA streams in HD with fast card updates on OvoStreams.">
   <meta name="twitter:image" content="https://ovostreams.top/assets/img/og-image.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#00e676">
+  <meta name="author" content="OvoStreams">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -144,18 +149,51 @@
   <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "OvoStreams",
-    "url": "https://ovostreams.top",
-    "description": "Watch live sports streams free in HD. Football, NBA, UFC and more.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://ovostreams.top/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OvoStreams", "item": "https://ovostreams.top/"},
+        {"@type": "ListItem", "position": 2, "name": "UFC Streams", "item": "https://ovostreams.top/ufc"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "UFC Streams - Watch UFC Streams Free | OvoStreams",
+      "description": "Watch UFC streams free on OvoStreams. Follow fight nights, main cards, and MMA live streams in HD with quick schedule updates.",
+      "url": "https://ovostreams.top/ufc",
+      "inLanguage": "en",
+      "isPartOf": {"@type": "WebSite", "name": "OvoStreams", "url": "https://ovostreams.top"}
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I watch UFC streams free on OvoStreams?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Go to ovostreams.top/ufc, find the fight card in the live schedule, and click the event. The UFC stream page opens immediately with no sign-up required."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a free UFC Fight Night stream on OvoStreams?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. UFC Fight Night events appear on the OvoStreams UFC schedule when streams go live. Click the event card to open the free HD watch page with no subscription needed."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I watch UFC Pay-Per-View (PPV) free on OvoStreams?",
+          "acceptedAnswer": {"@type": "Answer", "text": "OvoStreams lists UFC PPV events on the fight schedule and links to available free stream pages as they go live on fight night."}
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I watch MMA live streams online free?",
+          "acceptedAnswer": {"@type": "Answer", "text": "OvoStreams is a free MMA live stream hub covering UFC Fight Night, UFC PPV events, and other MMA cards. Visit the UFC page on ovostreams.top for tonight's fight schedule."}
+        }
+      ]
     }
-  }
+  ]
   </script>
 </head>
 <body class="page-home" data-default-category="ufc">
@@ -250,16 +288,48 @@
     </div>
   </main>
 
+  <section class="faq-section" aria-labelledby="faq-heading-ufc" style="background:var(--bg-secondary);border-top:1px solid var(--border);padding:56px 0;">
+    <div style="width:var(--content-width);margin:0 auto;">
+      <h2 id="faq-heading-ufc" style="font-size:1.5rem;margin-bottom:32px;">UFC Streams — FAQ</h2>
+      <div style="display:grid;gap:20px;">
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">How do I watch UFC streams free on OvoStreams?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">Go to the UFC page, find the fight card in the live schedule, and click the event card. The UFC stream page opens immediately — no sign-up or subscription required.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">Is there a free UFC Fight Night stream on OvoStreams?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">Yes. UFC Fight Night events appear on the OvoStreams UFC schedule when streams go live. Click the event card to open the free HD watch page with no subscription or account needed.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">Can I watch UFC PPV events free on OvoStreams?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">OvoStreams lists UFC PPV events on the fight schedule and links to available free stream pages as they go live on fight night, covering prelims through the main card.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">Where can I watch MMA live streams online for free?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">OvoStreams is a free MMA live stream hub covering UFC Fight Night, UFC PPV events, and other MMA cards. The fight schedule updates in real time so kick-off times and stream buttons are always current.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div>
         <a class="brand brand--footer" href="index.html" aria-label="OvoStreams home">
           <img src="assets/img/logo.svg" alt="OvoStreams" width="220" height="36" loading="lazy">
         </a>
+        <nav aria-label="Footer navigation" style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px 24px;font-size:0.875rem;">
+          <a href="index.html" style="color:var(--text-muted);">Home</a>
+          <a href="football.html" style="color:var(--text-muted);">Football Streams</a>
+          <a href="basketball.html" style="color:var(--text-muted);">Basketball Streams</a>
+          <a href="ufc.html" style="color:var(--accent-green);">UFC Streams</a>
+          <a href="nfl.html" style="color:var(--text-muted);">NFL Streams</a>
+          <a href="baseball.html" style="color:var(--text-muted);">Baseball Streams</a>
+        </nav>
         <p class="site-footer__copy">&copy; 2026 OvoStreams. UFC schedules and stream pages refresh in real time.</p>
       </div>
       <div>
-        <p class="site-footer__seo">Use the OvoStreams UFC page when you want a direct route to UFC streams free, MMA live streams, and updated free sports streaming coverage for upcoming cards. Fans checking ovostreams, ovo streams, ovogoals, or ovogoalz alternatives can move from the fight listing to the watch page quickly for main events, title fights, and full-card nights.</p>
+        <p class="site-footer__seo">Use the OvoStreams UFC page for a direct route to UFC streams free, MMA live stream pages, and free sports streaming for upcoming fight cards. Fans searching ovostreams, ovo streams, ovogoals, or ovogoalz alternatives can move from the fight listing to the watch page for main events, title fights, and full-card nights without registration.</p>
       </div>
     </div>
   </footer>

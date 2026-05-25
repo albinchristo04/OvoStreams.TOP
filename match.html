@@ -17,9 +17,14 @@
   <meta name="twitter:title" content="Watch Live Stream | OvoStreams">
   <meta name="twitter:description" content="Free live sports streaming in HD with OvoStreams.">
   <meta name="twitter:image" content="https://ovostreams.top/assets/img/og-image.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#00e676">
+  <meta name="author" content="OvoStreams">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -81,18 +86,25 @@
   <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "OvoStreams",
-    "url": "https://ovostreams.top",
-    "description": "Watch live sports streams free in HD. Football, NBA, UFC and more.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://ovostreams.top/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OvoStreams", "item": "https://ovostreams.top/"},
+        {"@type": "ListItem", "position": 2, "name": "Watch Live Stream", "item": "https://ovostreams.top/match.html"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Watch Live Sports Stream Free | OvoStreams",
+      "description": "Watch the latest live sports stream on OvoStreams. Football, NBA, UFC, NFL, and MLB in HD with fast match updates and stream links, no registration required.",
+      "thumbnailUrl": "https://ovostreams.top/assets/img/og-image.png",
+      "uploadDate": "2026-01-01",
+      "publisher": {"@type": "Organization", "name": "OvoStreams", "url": "https://ovostreams.top"}
     }
-  }
+  ]
   </script>
 </head>
 <body class="page-match">
@@ -172,10 +184,18 @@
         <a class="brand brand--footer" href="index.html" aria-label="OvoStreams home">
           <img src="assets/img/logo.svg" alt="OvoStreams" width="220" height="36" loading="lazy">
         </a>
+        <nav aria-label="Footer navigation" style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px 24px;font-size:0.875rem;">
+          <a href="index.html" style="color:var(--text-muted);">Home</a>
+          <a href="football.html" style="color:var(--text-muted);">Football Streams</a>
+          <a href="basketball.html" style="color:var(--text-muted);">Basketball Streams</a>
+          <a href="ufc.html" style="color:var(--text-muted);">UFC Streams</a>
+          <a href="nfl.html" style="color:var(--text-muted);">NFL Streams</a>
+          <a href="baseball.html" style="color:var(--text-muted);">Baseball Streams</a>
+        </nav>
         <p class="site-footer__copy">&copy; 2026 OvoStreams. Watch live sports free with fast stream updates and reliable embeds.</p>
       </div>
       <div>
-        <p class="site-footer__seo">Fans who search for ovostreams, ovo streams, ovogoals, or ovogoalz can use this watch page to jump straight into live football streams, NBA coverage, UFC fight nights, and other free sports streaming events. The match page keeps the title, time, category, and available stream buttons together so you can watch live sports online in HD without extra clicks or registration friction.</p>
+        <p class="site-footer__seo">Fans who search for ovostreams, ovo streams, ovogoals, or ovogoalz can use this watch page to jump straight into live football streams, NBA coverage, UFC fight nights, NFL games, and other free sports streaming events. The match page keeps the title, time, category, and available stream buttons together so you can watch live sports online in HD without extra clicks or registration friction.</p>
       </div>
     </div>
   </footer>

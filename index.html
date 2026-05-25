@@ -17,9 +17,15 @@
   <meta name="twitter:title" content="OvoStreams - Watch Free Live Sports Streaming">
   <meta name="twitter:description" content="Watch live sports free in HD on OvoStreams. Football, NBA, UFC, NFL and more with no registration.">
   <meta name="twitter:image" content="https://ovostreams.top/assets/img/og-image.png">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#00e676">
+  <meta name="author" content="OvoStreams">
+  <meta name="rating" content="general">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -144,18 +150,85 @@
   <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "OvoStreams",
-    "url": "https://ovostreams.top",
-    "description": "Watch live sports streams free in HD. Football, NBA, UFC and more.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://ovostreams.top/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "OvoStreams",
+      "alternateName": ["Ovo Streams", "OvoGoals", "Ovogoalz"],
+      "url": "https://ovostreams.top",
+      "description": "Watch live sports streams free in HD. Football, NBA, UFC, NFL, MLB and more with no registration.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {"@type": "EntryPoint", "urlTemplate": "https://ovostreams.top/?q={search_term_string}"},
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "OvoStreams",
+      "alternateName": ["Ovo Streams", "OvoGoals", "Ovogoalz"],
+      "url": "https://ovostreams.top",
+      "logo": "https://ovostreams.top/assets/img/logo.svg",
+      "description": "OvoStreams is a free live sports streaming hub serving football, basketball, UFC, NFL, and MLB fans worldwide with HD match streams and real-time schedules.",
+      "sameAs": []
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is OvoStreams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OvoStreams is a free live sports streaming hub where you can watch football, basketball (NBA), UFC, NFL, and MLB streams in HD without any registration or subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OvoStreams free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. OvoStreams is completely free. No account, no signup, no paywall — just select a live match from the schedule and start watching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sports can I watch on OvoStreams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OvoStreams covers football (soccer) streams, NBA basketball streams, UFC and MMA live streams, NFL American football streams, and MLB baseball streams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is OvoStreams different from Ovogoals or Ovogoalz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OvoStreams (ovostreams.top) is the updated home for fans who previously used Ovogoals and Ovogoalz. It offers a faster, cleaner schedule with HD stream links across more sports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to register to watch live sports on OvoStreams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No registration is required. Browse the live match schedule, click any match, and the stream page opens immediately — no account needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often does the OvoStreams schedule update?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The OvoStreams match schedule refreshes automatically every 60 seconds so kick-off times, live status, and new stream links are always current."
+          }
+        }
+      ]
     }
-  }
+  ]
   </script>
 </head>
 <body class="page-home" data-default-category="all">
@@ -236,16 +309,56 @@
     </div>
   </main>
 
+  <section class="faq-section" aria-labelledby="faq-heading" style="background:var(--bg-secondary);border-top:1px solid var(--border);padding:56px 0;">
+    <div style="width:var(--content-width);margin:0 auto;">
+      <h2 id="faq-heading" style="font-size:1.5rem;margin-bottom:32px;">Frequently Asked Questions</h2>
+      <div style="display:grid;gap:20px;">
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">What is OvoStreams?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">OvoStreams is a free live sports streaming hub where you can watch football, basketball (NBA), UFC, NFL, and MLB streams in HD without any registration or subscription. It serves as the modern replacement for Ovogoals and Ovogoalz.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">Is OvoStreams free to use?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">Yes. OvoStreams is completely free. No account, no signup, and no paywall — just select a live match from the schedule and start watching in HD quality instantly.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">What sports can I watch on OvoStreams?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">OvoStreams covers <a href="football.html" style="color:var(--accent-green);">football (soccer) streams</a>, <a href="basketball.html" style="color:var(--accent-green);">NBA basketball streams</a>, <a href="ufc.html" style="color:var(--accent-green);">UFC and MMA live streams</a>, <a href="nfl.html" style="color:var(--accent-green);">NFL American football streams</a>, and <a href="baseball.html" style="color:var(--accent-green);">MLB baseball streams</a>.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">How is OvoStreams different from Ovogoals or Ovogoalz?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">OvoStreams (ovostreams.top) is the updated home for fans who previously used Ovogoals and Ovogoalz. It offers a faster, cleaner match schedule with HD stream links across more sports categories, auto-refreshing every 60 seconds.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">Do I need to register to watch live sports on OvoStreams?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">No registration is required. Browse the live match schedule, click any match, and the stream page opens immediately — no account, no email, no password needed.</p>
+        </details>
+        <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:20px 24px;background:var(--bg-tertiary);">
+          <summary style="font-weight:600;cursor:pointer;list-style:none;">How often does the OvoStreams schedule update?</summary>
+          <p style="margin:14px 0 0;color:var(--text-muted);line-height:1.65;">The OvoStreams match schedule refreshes automatically every 60 seconds so kick-off times, live status, and new stream links are always current. You can also tap <strong>Refresh Schedule</strong> at any time for an immediate update.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div>
         <a class="brand brand--footer" href="index.html" aria-label="OvoStreams home">
           <img src="assets/img/logo.svg" alt="OvoStreams" width="220" height="36" loading="lazy">
         </a>
+        <nav aria-label="Footer navigation" style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px 24px;font-size:0.875rem;">
+          <a href="index.html" style="color:var(--text-muted);">Home</a>
+          <a href="football.html" style="color:var(--text-muted);">Football Streams</a>
+          <a href="basketball.html" style="color:var(--text-muted);">Basketball Streams</a>
+          <a href="ufc.html" style="color:var(--text-muted);">UFC Streams</a>
+          <a href="nfl.html" style="color:var(--text-muted);">NFL Streams</a>
+          <a href="baseball.html" style="color:var(--text-muted);">Baseball Streams</a>
+        </nav>
         <p class="site-footer__copy">&copy; 2026 OvoStreams. Streams update in real time for major live events.</p>
       </div>
       <div>
-        <p class="site-footer__seo">OvoStreams is built for fans who want fast access to free sports streaming without the clutter. Whether you search for ovostreams, ovo streams, ovogoalz, or ovogoals, this schedule is designed to help you watch live sports online in HD with fewer steps. Follow football streams, basketball streams, UFC cards, and other big events from one clean match board, then jump into the stream page as kick-off gets closer.</p>
+        <p class="site-footer__seo">OvoStreams is built for fans who want fast access to free sports streaming without the clutter. Whether you search for ovostreams, ovo streams, ovogoalz, or ovogoals, this schedule is designed to help you watch live sports online in HD with fewer steps. Follow football streams, basketball streams, UFC cards, NFL games, and MLB baseball from one clean match board, then jump straight into the stream page as kick-off gets closer.</p>
       </div>
     </div>
   </footer>

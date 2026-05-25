@@ -1,3 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /assets/js/
+Disallow: /*?*utm_
+
+# Block query-only variants that produce duplicate content
+Disallow: /match.html?*
+
+# Sitemap
+Sitemap: https://ovostreams.top/sitemap.xml
+
+# Crawl-rate hint for well-behaved bots
+Crawl-delay: 2
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /assets/js/
 Sitemap: https://ovostreams.top/sitemap.xml
